@@ -4,7 +4,7 @@ export const SITE: Site = {
   website: "https://jasontally.com/", // replace this with your deployed domain
   author: "Jason Tally",
   desc: "Technical musings related to the art and science of network archecture",
-  title: "Packets, Protocols and Principles",
+  title: "Packets and Principles",
   ogImage: "astropaper-og.jpg",
   lightAndDarkMode: true,
   postPerPage: 3,
