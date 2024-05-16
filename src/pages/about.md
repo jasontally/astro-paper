@@ -6,4 +6,4 @@ Welcome to my home for professional content that I call Packets and Principals.
 
 ![](/assets/com-jasontally-about.svg)
 
-I am Jason Tally, a Network Architect for a global 500 auto parts manufacturer.
+Hi, I am Jason Tally. I consider myself a technologist and I am currently a Network Architect for a global 500 auto parts manufacturer.
