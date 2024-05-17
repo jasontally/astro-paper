@@ -5,6 +5,9 @@ modDatetime: 2024-05-16
 title: Choosing the Right Platform
 featured: false
 draft: true
+tags:
+  - Cloudflare
+  - GitHub
 description: Key Principles I Used to Select Pages CMS, GitHub, AstroPaper, and
   Cloudflare Pages as the Basis for My New Home for Content
 ---
