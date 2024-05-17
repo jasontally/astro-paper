@@ -8,8 +8,12 @@ draft: true
 description: Key Principles I Used to Select Pages CMS, AstroPaper, GitHub, and
   Cloudflare Pages as the Basis for My New Home for Content
 ---
-Back in the day, I did some WordPress based blogging to share my professional thoughts. As kids and work consumed more of my life I decommissioned the blog due to the time and expense required to maintain it. Fast forward more than a decade and I have moved from being an individual contributor into roles that involve leading others and have come to value the sharing of ideas more. For that reason I started looking for a more modern platform to host my home for professional content. Here are some of the principals I thought of when selecting the components for this
+Back in the day, I did some WordPress based platform to share my professional thoughts. As kids and work consumed more of my life, I decommissioned the blog due to the time and expense required to maintain it. Fast forward more than a decade and I have moved from being an individual contributor into roles that involve more forming consensus, teaching and leading others. These newer roles have made me value the sharing of ideas more. For that reason I started looking for a more modern platform to host my home for professional content. Here are some of the principals I thought of when selecting the components for this site.
 
 # Security
 
-<p style="text-align: start">Over the years WordPress, and its plugins, along with other dynamic blog platforms have had many vulnerabilities.</p><p style="text-align: start">Performance</p><p style="text-align: start">Simplicity</p><p style="text-align: start">User Experience</p><p style="text-align: start">Efficiency</p>
+<p style="text-align: start">Over the years WordPress, and its plugins, along with other dynamic content platforms have had many vulnerabilities. I want a platform that won’t require me to jump on patches or remediation instantly to keep it online or to protect visitors. Much of the attack surface of a dynamic content platform comes from the fact that it is running a scripting language. Static content platforms have since emerged (and started to die out a bit) that have some of the benefits of a dynamic platform (not needing to create each page by hand and cross link it from other) while skipping the dynamic component, significantly reducing the attack surface.</p>
+
+# Performance
+
+<p style="text-align: start">Dynamic content platforms have</p><p style="text-align: start">Simplicity</p><p style="text-align: start">User Experience</p><p style="text-align: start">Efficiency</p>
