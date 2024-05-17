@@ -16,4 +16,8 @@ Back in the day, I did some WordPress based platform to share my professional th
 
 # Performance
 
-<p style="text-align: start">Dynamic content platforms have</p><p style="text-align: start">Simplicity</p><p style="text-align: start">User Experience</p><p style="text-align: start">Efficiency</p>
+<p style="text-align: start">Dynamic content platforms are slow to generate their pages, resulting in needs for server side cache functions or CDN based caches. From the host to the site generator I wanted to use something that serve the content quickly and render quickly in the browser.</p>
+
+# Simplicity
+
+<p style="text-align: start">Knowing that I want to be able to re-use some or all of the components of the platform</p><p style="text-align: start">User Experience</p><p style="text-align: start">Efficiency</p>
