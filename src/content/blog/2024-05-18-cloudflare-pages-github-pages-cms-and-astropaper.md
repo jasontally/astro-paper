@@ -18,9 +18,9 @@ My aim to provide user/mobile friendly posting of content also had me looking fo
 
 I ultimately chose Cloudflare Pages because of its tight integration to other Cloudflare services, great performance, globally distributed nature and options for mixing static and dynamic content with functions. If I had to move off Cloudflare Pages I would probably reach fist for something like Github Actions for the build stage and potentially some form of S3 for the hosting.
 
-Repository
+# Repository
 
-For the pre-build storage I briefly considered GitLab due to its more independent stance but security issues with GitLab since its inception have highlighted the difficulty of managing threats to that type of environment. Contrary to predictions, GitHub has continued to handle security well since its acquisition by Microsoft.
+For the pre-build storage I briefly considered GitLab due to its more independent stance but security issues with GitLab since its inception have highlighted the difficulty of managing threats to that type of environment. Contrary to predictions, GitHub has continued to handle security well since its acquisition by Microsoft. I do with that GitHub would allow me to use only multiple FIDO2 keys for the second factor.
 
 CMS
 
