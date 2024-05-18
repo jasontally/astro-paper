@@ -26,6 +26,4 @@ Back in the day, I used a WordPress-based platform to share my professional thou
 
 # Efficiency
 
-<p style="text-align: start">I will end up using this platform for more than just a single site, so efficiency of recurring operating costs will add up over time. I would like the content I am posting to be able to stay online for decades with minimal recurring cost while still being performant, secure, and scalable.</p>
-
-<p style="text-align: start">Look for a follow-up post where I explain the different components that I chose based on these principles.</p>
+<p style="text-align: start">I will end up using this platform for more than just a single site, so efficiency of recurring operating costs will add up over time. I would like the content I am posting to be able to stay online for decades with minimal recurring cost while still being performant, secure, and scalable.</p><p style="text-align: start"><a href="https://jasontally.com/posts/2024-05-18-cloudflare-pages-github-pages-cms-and-astropaper/">In the next post</a> I explain the different components that I chose based on these principles.</p>
