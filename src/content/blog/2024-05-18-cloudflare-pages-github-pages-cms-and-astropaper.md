@@ -24,7 +24,7 @@ For the pre-build storage I briefly considered GitLab due to its more independen
 
 # Content Management
 
-Static site generators have resulted in some over complicated headless CMS systems but also a new breed of content authoring options such as Tina CMS or the Prose markdown editor that help to manage markdown or other assets that feed into a static site generator. I chose to go with Pages CMS hosted in my own Cloudflare account. Pages CMS is primarily a Vue based app that runs in the browser along with a small server side component running on Cloudflare Pages Functions that helps with authentication to GitHub. Pages CMS helps with authoring markdown files and also helps with asset management for smaller assets that you would store directly in your GitHub repo.
+Static site generators have resulted in some over complicated headless CMS systems but also a new breed of content authoring options such as Tina CMS or the Prose markdown editor that help to manage markdown or other assets that feed into a static site generator. I chose to go with Pages CMS hosted in my own Cloudflare account. Pages CMS is primarily a Vue based app that runs in the browser along with a small server side component (similar to the Prose gatekeeper) running on Cloudflare Pages Functions that helps with authentication to GitHub. Pages CMS helps with authoring markdown files and also helps with asset management for smaller assets that you would store directly in your GitHub repo.
 
 # Site Generator
 
