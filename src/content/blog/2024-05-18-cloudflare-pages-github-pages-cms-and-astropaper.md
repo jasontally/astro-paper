@@ -1,7 +1,7 @@
 ---
 author: Jason Tally
-pubDatetime: 2024-05-18
-modDatetime: 2024-05-18
+pubDatetime: 2024-05-18T19:06
+modDatetime: 2024-05-18T19:06
 title: Cloudflare Pages, Github, Pages CMS and AstroPaper
 featured: false
 draft: false
