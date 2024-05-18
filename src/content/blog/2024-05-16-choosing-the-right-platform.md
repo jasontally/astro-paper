@@ -22,7 +22,7 @@ Back in the day, I used a WordPress-based platform to share my professional thou
 
 # Simplicity and User Experience
 
-<p style="text-align: start">I want to be able to reuse some or all of the components of the platform for other purposes, where I may be supporting others who aren't familiar with Markdown, npm, or Git. This is a problem for static site generators in general. One way to solve this has been to have a static site that pulls content from a dynamic content management system. I chose to avoid that pattern due to the complexity of having a static site interact with a CMS.</p>
+<p style="text-align: start">I want to be able to reuse some or all of the components of the platform for other purposes, where I may be supporting others who aren't familiar with Markdown, npm, or Git. I also want to be able to support authors that only have access to mobile devices. This is a problem for static site generators in general. One way to solve this has been to have a static site that pulls content from a dynamic content management system. I chose to avoid that pattern due to the complexity of having a static site interact with a CMS.</p>
 
 # Efficiency
 
