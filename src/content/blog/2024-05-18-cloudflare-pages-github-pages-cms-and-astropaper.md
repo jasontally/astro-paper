@@ -22,6 +22,10 @@ I ultimately chose Cloudflare Pages because of its tight integration to other Cl
 
 For the pre-build storage I briefly considered GitLab due to its more independent stance but security issues with GitLab since its inception have highlighted the difficulty of managing threats to that type of environment. Contrary to predictions, GitHub has continued to handle security well since its acquisition by Microsoft. I do with that GitHub would allow me to use only multiple FIDO2 keys for the second factor.
 
-CMS
+# Content Management
 
-Site Generator
+Static site generators have resulted in some over complicated headless CMS systems but also a new breed of content authoring options such as Tina CMS or the Prose markdown editor that help to manage markdown or other assets that feed into a static site generator. I chose to go with Pages CMS hosted in my own Cloudflare account. Pages CMS is primarily a Vue based app that runs in the browser along with a small server side component running on Cloudflare Pages Functions that helps with authentication to GitHub. Pages CMS helps with authoring markdown files and also helps with asset management for smaller assets that you would store directly in your GitHub repo.
+
+# Site Generator
+
+The final piece to connect these dots together is the site generator. For performance reasons I am currently using AstroPaper that is based on the Astro meta framework. Astro is
