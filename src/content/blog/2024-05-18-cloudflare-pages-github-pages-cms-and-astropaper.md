@@ -28,4 +28,4 @@ Static site generators have resulted in some over complicated headless CMS syste
 
 # Site Generator
 
-The final piece to connect these dots together is the site generator. For performance reasons I am currently using AstroPaper that is based on the Astro meta framework. Astro is
+The final piece to connect these dots together is the site generator. For performance reasons I am currently using AstroPaper that is based on the Astro meta framework. I also tried an Eleventy theme but went with AstroPaper because it had better performance and needed less tweaking for my day 1 use cases. Of all the things, I think this is the most likely to change in the future. I’d love to get more experience using something like Remix (or are we calling it react router now?) that I could use to build a full stack edge app in the future, so I will keep my eyes out for remix starters that could help get me more practice there.
