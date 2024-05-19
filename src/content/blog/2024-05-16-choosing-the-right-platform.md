@@ -1,7 +1,7 @@
 ---
 author: Jason Tally
-pubDatetime: 2024-05-16
-modDatetime: 2024-05-16
+pubDatetime: 2024-05-16 18:02:00 -04:00
+modDatetime: 2024-05-16 18:02:00 -04:00
 title: Choosing the Right Platform
 featured: false
 draft: false
