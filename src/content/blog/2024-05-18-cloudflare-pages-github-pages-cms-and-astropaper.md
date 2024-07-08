@@ -1,7 +1,7 @@
 ---
 author: Jason Tally
 pubDatetime: 2024-05-18 19:06:00 -04:00
-modDatetime: 2024-05-18 19:06:00 -04:00
+modDatetime: 2024-07-08 19:50:00 -04:00
 title: Cloudflare Pages, Github, Pages CMS and AstroPaper
 featured: false
 draft: false
@@ -26,6 +26,6 @@ Static site generators have resulted in some overcomplicated headless CMS system
 
 # Site Generator
 
-The final piece to connect these dots together is the site generator. For performance reasons, I am currently using AstroPaper, which is based on the Astro meta framework. I also tried an Eleventy theme but went with AstroPaper because it had better performance and needed less tweaking for my day-one use cases. Of all the things, I think this is the most likely to change in the future. I'd love to get more experience using something like Remix (or are we calling it React Router now?) that I could use to build a full-stack edge app in the future, so I will keep my eyes out for Remix starters that could help get me more practice there.
+The final piece to connect these dots together is the site generator. For performance reasons, I am currently using AstroPaper, which is based on the Astro meta framework. I also tried an Eleventy theme but went with AstroPaper because it has better performance and needed less tweaking for my day-one use cases.
 
 In the future, I may cover in more detail how you could easily string these parts together to do something similar.
