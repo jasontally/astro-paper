@@ -26,6 +26,6 @@ Static site generators have resulted in some overcomplicated headless CMS system
 
 # Site Generator
 
-The final piece to connect these dots together is the site generator. For performance reasons, I am currently using AstroPaper, which is based on the Astro meta framework. I also tried an Eleventy theme but went with AstroPaper because it has better performance and needed less tweaking for my day-one use cases.
+The final piece to connect these dots together is the site generator. For performance reasons, I am currently using AstroPaper, which is based on the Astro meta framework. I also tried an Eleventy theme but went with AstroPaper because it has better performance, quickly tracks advancements in the Astro project, covers things that are important to content discovery and needed less tweaking for my day-one use cases.
 
 In the future, I may cover in more detail how you could easily string these parts together to do something similar.
