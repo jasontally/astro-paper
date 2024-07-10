@@ -20,8 +20,8 @@ If you have the opportunity to use enterprise networking gear, one of the things
 
 ## Getting more familiar with GNU/Linux as a network OS
 
-These two things, along with advancements like and eBPF and VPP with Linux Control Plane, make me want to get more familiar with running GNU/Linux as a network OS. I hope to gain more knowledge about the software that is underpinning all of the devices that I am architecting and also to glimpse into a future where are able to be more secure by directly operating the OS that network vendors are hiding from us today.
+These two things, along with advancements like and eBPF and VPP with Linux Control Plane, make me want to get more familiar with running GNU/Linux as a network OS. I hope to gain more knowledge about the software that is underpinning all of the devices that I am architecting and also to glimpse into a future where we need to directly operate our network OS to stay secure.
 
 # Hardware choice
 
-Driven by cost and wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 6 10/100/1000Base-T ports and 2 SFP+ ports all connected to decent Intel NICs.
+Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 6 10/100/1000Base-T ports and 2 SFP+ ports all connected to decent Intel NICs. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
