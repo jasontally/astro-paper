@@ -24,7 +24,7 @@ These two things, along with advancements like and eBPF and VPP with Linux Contr
 
 # Hardware choice
 
-Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 6 10/100/1000Base-T ports and 2 SFP+ ports all connected to decent Intel NICs. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
+Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 4 Intel I350 NIC’s connected to Base-T ports 1-4 and 4 Intel X553 NIC’s connected to Base-T ports 5, 6 and both SFP+ ports. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
 
 ### Loading Dell DiagOS onto a USB drive
 
