@@ -95,4 +95,6 @@ After this you will find yourself in a very normal looking BIOS setup menu. The 
 
 Reset settings to defaults
 
+Dell Diag OS on EMMC
+
 Intel X553 vs I350
