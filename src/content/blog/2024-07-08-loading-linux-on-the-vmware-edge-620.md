@@ -25,3 +25,66 @@ These two things, along with advancements like and eBPF and VPP with Linux Contr
 # Hardware choice
 
 Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 6 10/100/1000Base-T ports and 2 SFP+ ports all connected to decent Intel NICs. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
+
+## Connecting to the serial console
+
+The VMware Edge 600 series and VEP 1400 series come with a built in USB to serial convertor that is exposed to an micro-usb connector underneath a metal plate to the left go the SFP+ ports. To access it, we grab a micro-usb to USB-A cable and plug it into our computer.
+
+### Finding the device
+
+Once this is plugged in, you will need to find the device. On Mac or Linux you can list your devices and filter the output for one that contains serial in the name.
+
+```
+ls /dev/ | grep serial
+cu.usbserial-0001
+tty.usbserial-0001
+```
+
+On Windows you can look at device manager to see what new COM port is showing up.
+
+### Connecting to the device
+
+We need to connect with a baud rate of 115200 bits per second. On Mac or Linux, you can use the screen utility to connect to the device and then specify the rate of 115200 after the device name
+
+```
+screen /dev/cu.usbserial-0001 115200 
+```
+
+On Windows you can use putty, choose the Serial connection type and the specify the COM port and 115200 for the speed.
+
+One interesting think to note is that the USB to serial adapter inside this box is powered over USB, so it will work even before you connect the device to power, allowing you to get output from the device from the earliest stages of power on.
+
+### Power on
+
+Plug power into the device and with any luck, you will get output like this:
+
+```
+BIOS Boot Selector for VEP1400-X
+Version 3.50.0.9-10
+
+
+POST Configuration
+  CPU Signature 506F1
+  CPU FamilyID=6, Model=5F, SteppingId=1, Processor=0
+  Microcode Revision 2E
+  Platform ID: 0x0
+  PMG_CST_CFG_CTL: 0x37
+  Misc EN: 0x840089
+  Gen PM ConA: 0xA0800200
+  Therm Status: 0x8000000
+  POST Control=0xEA000F03, Status=0xE600DF00
+
+BIOS initializations...
+
+CPGC Memtest Channel 0 ...................... PASS
+```
+
+### Changing BIOS settings
+
+After POST you will get the option to enter the BIOS
+
+```
+Version 2.19.1266. Copyright (C) 2020 American Megatrends, Inc.
+BIOS Date: 07/23/2020 10:56:50 Ver: 0ACHI040
+Press <DEL> or <F2> to enter setup.  
+```
