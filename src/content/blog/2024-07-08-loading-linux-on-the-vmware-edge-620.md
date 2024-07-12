@@ -86,5 +86,13 @@ After POST you will get the option to enter the BIOS
 ```
 Version 2.19.1266. Copyright (C) 2020 American Megatrends, Inc.
 BIOS Date: 07/23/2020 10:56:50 Ver: 0ACHI040
-Press <DEL> or <F2> to enter setup.  
+Press <DEL> or <F2> to enter setup.    
 ```
+
+After this you will find yourself in a very normal looking BIOS setup menu. The first time I experienced this, it was a bit surprising to me, being that we are connecting over a serial connection.
+
+![](//assets/VMwareedge620BIOS.jpg)
+
+Reset settings to defaults
+
+Intel X553 vs I350
