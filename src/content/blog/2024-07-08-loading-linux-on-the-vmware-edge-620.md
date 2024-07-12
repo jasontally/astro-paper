@@ -26,6 +26,8 @@ These two things, along with advancements like and eBPF and VPP with Linux Contr
 
 Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 6 10/100/1000Base-T ports and 2 SFP+ ports all connected to decent Intel NICs. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
 
+### Loading Dell DiagOS onto a USB drive
+
 ## Connecting to the serial console
 
 The VMware Edge 600 series and VEP 1400 series come with a built in USB to serial convertor that is exposed to an micro-usb connector underneath a metal plate to the left go the SFP+ ports. To access it, we grab a micro-usb to USB-A cable and plug it into our computer.
@@ -79,9 +81,9 @@ BIOS initializations...
 CPGC Memtest Channel 0 ...................... PASS
 ```
 
-### Changing BIOS settings
+### Booting into Dell DiagOS
 
-After POST you will get the option to enter the BIOS
+After POST you will get the option to enter the BIOS, press the delete key within 3 minutes to
 
 ```
 Version 2.19.1266. Copyright (C) 2020 American Megatrends, Inc.
