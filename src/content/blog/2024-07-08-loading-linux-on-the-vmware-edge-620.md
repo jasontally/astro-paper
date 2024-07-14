@@ -24,13 +24,42 @@ These two things, along with advancements like and eBPF and VPP with Linux Contr
 
 # Hardware choice
 
-Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 4 Intel I350 NIC’s connected to Base-T ports 1-4 and 4 Intel X553 NIC’s connected to Base-T ports 5, 6 and both SFP+ ports. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
+Driven by cost while still wanting to use a widely deployed hardware platform that was designed specifically for networking, I chose to purchase a second hand VMware Edge 620 on ebay for $80 USD for this project. This is almost identical to the Dell VEP 1400 hardware and runs an Intel C3000 series system on chip that is used in other things like the Cisco 8200 series routers. The hardware provides 4 Intel I350 NIC’s connected to Base-T ports 1-4 and 4 Intel X553 NIC’s connected to Base-T ports 5, 6 and both SFP+ ports. It also provides a 16GB eMMC drive and 128GB M.2 SSD for storage. Despite being an Intel x86 box, it lacks any form of video out so our interactions will need to be entirely over serial console or SSH.
 
 ### Loading Dell DiagOS onto a USB drive
 
+In order to use the VMware Edge 620 like a regular VEP 1400, we need to load the VEP 1400 BIOS onto the unit. For at least one reason (that it disables the hardware watchdog) one of the best ways to do this is to load the Dell DiagOS onto the eMMC, boot from that, and then use the Dell Unified Firmware Updater to convert our VMware Edge 620 into a VEP 1400.
+
+After downloading the DiagOS image from Dell and extracting the ISO file, we will use dd on macOS or linux (if you use Windows try Rufus for this) to copy the ISO to a USB drive that we will later boot the VMware Edge 620 with.
+
+Insert the USB drive into your computer, identify it ("diskutil list" on macOS) and then unmount it:
+
+```
+diskutil unmountDisk disk4
+Unmount of all volumes on disk4 was successful
+```
+
+Copy the iso file to the USB drive:
+
+```
+sudo dd if=/Users/jason.tally/Downloads/diagos-recovery-x86_64-dellemc_vep1400_c3538-r0.3.43.3.81-27.iso of=/dev/disk4 bs=8m
+34+0 records in
+34+0 records out
+285212672 bytes transferred in 41.290682 secs (6907434 bytes/sec)
+```
+
+Unmount the USB drive again:
+
+```
+diskutil unmountDisk disk4
+Unmount of all volumes on disk4 was successful
+```
+
+Remove the drive it from your computer and insert it into one of the USB A ports on the side of the VMware Edge 620
+
 ## Connecting to the serial console
 
-The VMware Edge 600 series and VEP 1400 series come with a built in USB to serial convertor that is exposed to an micro-usb connector underneath a metal plate to the left go the SFP+ ports. To access it, we grab a micro-usb to USB-A cable and plug it into our computer.
+The VMware Edge 620 series and VEP 1400 series come with a built in USB to serial convertor that is exposed to an micro-usb connector underneath a metal plate to the left go the SFP+ ports. To access it, we grab a micro-usb to USB-A cable and plug it into our computer.
 
 ### Finding the device
 
