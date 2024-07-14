@@ -122,7 +122,43 @@ Press <DEL> or <F2> to enter setup.
 
 After this you will find yourself in a very normal looking BIOS setup menu. The first time I experienced this, it was a bit surprising to me, being that we are connecting over a serial connection.
 
-![](//assets/VMwareedge620BIOS.jpg)
+Once you enter the BIOS setup utility, use the arrows to move over to the "Save & Exit" tab, find and choose the USB drive under the "Boot Override" section before the hardware watchdog reboots the box!
+
+With luck, you will get the prompt to choose what media to install DiagOS install on
+
+```
+  Booting `VEP1400 DiagOS Install'
+
+                                                                                
+Platform  : x86_64-dellemc_vep1400_c3538-r0                                     
+Version   : 3.43.3.81-27                                                        
+Build Date: 2022-12-08T01:14-08:00                                              
+Info: Mounting kernel filesystems... done.                                      
+starting to install vep1400 DiagOS                                              
+discover: Rescue mode detected. No discover stopped.                            
+ONIE: Executing installer: /diag-installer-x86_64-dellemc_vep1400_c3538-r0-3.43.3.81-27-2022-12-08.bin
+Ignoring Verifying image checksum ... OK.                                       
+cur_dir / archive_path /var/tmp/installer tmp_dir /tmp/tmp.1Ee4rd               
+Preparing image archive ...sed -e '1,/^exit_marker$/d' /var/tmp/installer | tar xf -[   13.915879] sd 6:0:0:0: [sdb] No Caching mode page found
+[   13.921345] sd 6:0:0:0: [sdb] Assuming drive cache: write through            
+ OK.                                                                            
+Diag-OS Installer: platform: x86_64-dellemc_vep1400_c3538-r0                    
+platform found vep1400                                                          
+platform vep1400 is supported.                                                  
+console port ttyS0                                                              
+                                                                                
+****************************                                                    
+Select Installation Device                                                      
+****************************                                                    
+1.SSD                                                                          
+2.USB Disk
+3.eMMC
+0.Quit
+---------------------------
+Please select the device type that DIAG OS will be install on :                                  
+```
+
+![](//assets/VMwareedge620BIOS.jpg)Choose option 3 and hit enter
 
 Reset settings to defaults
 
