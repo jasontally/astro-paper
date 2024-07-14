@@ -124,7 +124,7 @@ After this you will find yourself in a very normal looking BIOS setup menu. The 
 
 Once you enter the BIOS setup utility, use the arrows to move over to the "Save & Exit" tab, find and choose the USB drive under the "Boot Override" section before the hardware watchdog reboots the box!
 
-With luck, you will get the prompt to choose what media to install DiagOS install on
+With luck, you will get the prompt to choose what media to install DiagOS install on. We will install on the eMMC disk so that we can use DiagOS later even after we have installed Debian on the SSD.
 
 ```
   Booting `VEP1400 DiagOS Install'
@@ -158,7 +158,32 @@ Select Installation Device
 Please select the device type that DIAG OS will be install on :                                  
 ```
 
-![](//assets/VMwareedge620BIOS.jpg)Choose option 3 and hit enter
+![](//assets/VMwareedge620BIOS.jpg)Choose option 3 and hit enter. If you get errors similar to the below, don't worry. This happens because the label type of the partition on the eMMC is not of the type that Dia
+
+```
+Installing grub for diag-os
+ERROR: grub-install failed on: /dev/mmcblk0
+Installing for i386-pc platform.
+grub-install: warning: this GPT partition label contains no BIOS Boot Partition; embedding won't be possible.
+grub-install: warning: Embedding is not possible.  GRUB can only be installed in this setup by using blocklists.  However, blocklists are UNRELIABLE and their use is discouraged..
+grub-install: error: will not proceed with blocklists.
+Removing /tmp/tmp.ZkVRxp
+Failure: Unable to install image: /diag-installer-x86_64-dellemc_vep1400_c3538-r0-3.43.3.81-27-2022-12-08.bin
+This should be not reachable unless something wrong is there!!!!!
+Info: BIOS mode: legacy
+Info: Using eth0 MAC address: 18:5a:58:b3:3a:20
+Info: eth0:  Checking link... down.
+ONIE: eth0: link down.  Skipping configuration.
+ONIE: Failed to configure eth0 interface
+Starting: klogd... done.
+Starting: dropbear ssh daemon... done.
+Starting: telnetd... done.
+discover: Rescue mode detected.  Installer disabled.
+
+Please press Enter to activate this console. 
+```
+
+Press enter and then do the following to change the
 
 Reset settings to defaults
 
