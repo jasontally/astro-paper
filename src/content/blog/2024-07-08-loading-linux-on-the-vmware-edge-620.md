@@ -189,6 +189,11 @@ Press enter and then do the following to change the
 
 Reset settings to defaults
 
+```
+dd if=/dev/zero of=/dev/sda
+dd if=/dev/zero of=/dev/mmc
+```
+
 Dell Diag OS on EMMC
 
 Intel X553 vs I350
