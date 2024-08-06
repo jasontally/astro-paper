@@ -187,6 +187,10 @@ Please press Enter to activate this console.
 
 Press enter and then do the following to change the
 
+```
+i2cset -y 1 0x22 0 0 b
+```
+
 Reset settings to defaults
 
 ```
