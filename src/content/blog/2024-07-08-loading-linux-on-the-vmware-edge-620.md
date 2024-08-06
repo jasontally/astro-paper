@@ -191,7 +191,7 @@ Press enter and then do the following to change the
 i2cset -y 1 0x22 0 0 b
 ```
 
-Reset settings to defaults
+[https://forums.servethehome.com/index.php?threads/dell-vep-vmware-edge-velo-cloud-sd-wan-veracloud-vep1400-vep1400-x-firewall-units.39392/page-12](https://forums.servethehome.com/index.php?threads/dell-vep-vmware-edge-velo-cloud-sd-wan-veracloud-vep1400-vep1400-x-firewall-units.39392/page-12)
 
 ```
 dd if=/dev/zero of=/dev/sda
